@@ -1,4 +1,4 @@
-(defproject reagent-p79-demo "0.1.0-SNAPSHOT"
+(defproject reagent-issue79-demo "0.1.0-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -24,14 +24,14 @@
   :plugins [[lein-environ "1.0.0"]
             [lein-asset-minifier "0.2.2"]]
 
-  :ring {:handler reagent-p79-demo.handler/app
-         :uberwar-name "reagent-p79-demo.war"}
+  :ring {:handler reagent-issue79-demo.handler/app
+         :uberwar-name "reagent-issue79-demo.war"}
 
   :min-lein-version "2.5.0"
 
-  :uberjar-name "reagent-p79-demo.jar"
+  :uberjar-name "reagent-issue79-demo.jar"
 
-  :main reagent-p79-demo.server
+  :main reagent-issue79-demo.server
 
   :clean-targets ^{:protect false} [:target-path
                                     [:cljsbuild :builds :app :compiler :output-dir]
@@ -48,7 +48,7 @@
                                         :optimizations :none
                                         :pretty-print  true}}}}
 
-  :profiles {:dev {:repl-options {:init-ns reagent-p79-demo.repl
+  :profiles {:dev {:repl-options {:init-ns reagent-issue79-demo.repl
                                   :nrepl-middleware []}
 
                    :dependencies [[ring/ring-mock "0.2.0"]
@@ -68,12 +68,12 @@
                               :server-port 3449
                               :nrepl-port 7002
                               :css-dirs ["resources/public/css"]
-                              :ring-handler reagent-p79-demo.handler/app}
+                              :ring-handler reagent-issue79-demo.handler/app}
 
                    :env {:dev true}
 
                    :cljsbuild {:builds {:app {:source-paths ["env/dev/cljs"]
-                                              :compiler {:main "reagent-p79-demo.dev"
+                                              :compiler {:main "reagent-issue79-demo.dev"
                                                          :source-map true}}
 }
 }}

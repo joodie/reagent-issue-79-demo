@@ -1,5 +1,5 @@
-(ns reagent-p79-demo.repl
-  (:use reagent-p79-demo.handler
+(ns reagent-issue79-demo.repl
+  (:use reagent-issue79-demo.handler
         ring.server.standalone
         [ring.middleware file-info file]))
 

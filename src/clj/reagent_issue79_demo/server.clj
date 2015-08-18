@@ -1,5 +1,5 @@
-(ns reagent-p79-demo.server
-  (:require [reagent-p79-demo.handler :refer [app]]
+(ns reagent-issue79-demo.server
+  (:require [reagent-issue79-demo.handler :refer [app]]
             [environ.core :refer [env]]
             [ring.adapter.jetty :refer [run-jetty]])
   (:gen-class))

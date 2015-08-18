@@ -1,4 +1,4 @@
-(ns reagent-p79-demo.handler
+(ns reagent-issue79-demo.handler
   (:require [compojure.core :refer [GET defroutes]]
             [compojure.route :refer [not-found resources]]
             [ring.middleware.defaults :refer [site-defaults wrap-defaults]]

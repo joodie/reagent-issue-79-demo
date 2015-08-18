@@ -1,4 +1,4 @@
-(ns reagent-p79-demo.core
+(ns reagent-issue79-demo.core
   (:require-macros [cljs.core.async.macros :refer [go go-loop]])
   (:require [cljs.core.async :as async :refer [put! chan <!]]
             [reagent.core :as reagent :refer [atom]]))
